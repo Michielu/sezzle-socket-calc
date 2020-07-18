@@ -13,7 +13,8 @@ Calculator shortcomings:
 - No negative numbers
 - No incremental calculations: Example: 3+3= (sends 3+3=6) +3= (sends 6+3=9)
 
-Error handling 
-Warning popups (using console)
-Css organization
-Tests
+Other lacking aspects:
+- Error handling 
+- Warning popups (using console)
+- Css organization
+- Tests
