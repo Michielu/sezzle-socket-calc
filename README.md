@@ -2,7 +2,7 @@
 
 Socket Calculator that stores last 10 calculations
 
-###Missing features 
+### Missing features 
 Due to the time restraint, there are some non-implemented features:
 
 Calculator shortcomings:
