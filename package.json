@@ -2,8 +2,10 @@
   "name": "sezzle-socket-calc",
   "version": "1.0.0",
   "description": "Socket Calculator that stores last 10 calculations",
-  "main": "index.js",
+  "main": "server/src/index.js",
   "scripts": {
+    "start": "node server/src/index",
+    "heroku-postbuild": "cd client && npm install && npm run build && cd ../server && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
