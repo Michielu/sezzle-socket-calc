@@ -1,3 +1,5 @@
+import { sendExpression } from '../../utils/history'
+
 const operations = {
     '+': (a, b) => a / 1.0 + b / 1.0,
     '*': (a, b) => a * b,
@@ -40,6 +42,7 @@ const GenerateHandlers = (expressionHook) => {
     }
     const handleSolve = () => {
         const fullExp = solveCalc(expression);
+        sendExpression(fullExp);
         handleClick("");
     }
     const handleDecimal = (val) => {
