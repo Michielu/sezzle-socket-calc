@@ -1,12 +1,7 @@
 const setHistoryRoutes = require("./history.js");
 
-
-
-
-
-// module.exports = router;
-const setRoutes = function (app) {
-    setHistoryRoutes(app)
+const setRoutes = function (app, io) {
+    setHistoryRoutes(app, io)
 }
 
 module.exports = setRoutes

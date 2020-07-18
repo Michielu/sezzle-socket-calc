@@ -2,6 +2,7 @@ import React from 'react';
 import { CalcButton } from '../../partials';
 import useExpression from './hooks/useExpression'
 import GenerateHandlers from './handlers';
+import { clearHistory } from '../../utils/history'
 
 function Calculator() {
     const useExpressions = useExpression();
@@ -37,6 +38,9 @@ function Calculator() {
                     <CalcButton varient="outline-dark" onClick={handleDecimal} value={'.'} />
                     <CalcButton varient="outline-primary" onClick={handleClear} value={'AC'} />
                     <CalcButton varient="outline-success" onClick={handleSolve} value={'='} />
+                </div>
+                <div className="button-row">
+                    <CalcButton varient="dark" onClick={clearHistory} value={'Clear history'} />
                 </div>
             </div>
         </div>

@@ -1,5 +1,4 @@
-import { getHistory, postExpression } from '../api/index'
-
+import { getHistory, postExpression, getClearHistory } from '../api/index'
 
 const MAX_QUEUE_SIZE = 10;
 
@@ -9,6 +8,12 @@ const addToQueue = (oldQueue, newExp) => {
     }
     oldQueue.unshift(newExp);
     return Object.freeze(oldQueue);
+}
+
+const clearHistory = async () => {
+    //TODO error handling
+    console.log("Clearing history")
+    return getClearHistory()
 }
 
 const getServerHistory = async () => {
@@ -23,5 +28,5 @@ const sendExpression = (exp) => {
 
 
 export {
-    addToQueue, sendExpression, getServerHistory
+    addToQueue, getServerHistory, clearHistory, sendExpression,
 }

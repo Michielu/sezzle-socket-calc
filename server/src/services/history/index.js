@@ -10,6 +10,10 @@ const addToQueue = (newExp) => {
 
 const getQueue = () => queue
 
+const clearQueue = () => {
+    queue = []
+}
+
 module.exports = {
-    addToQueue, getQueue
+    addToQueue, getQueue, clearQueue
 }

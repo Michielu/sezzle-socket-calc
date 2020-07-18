@@ -23,6 +23,16 @@ const postExpression = async (newExp) => {
     }
 }
 
+const getClearHistory = async () => {
+    const URL = "/h/clear";
+    try {
+        const expHistory = await axiosRequest.get(URL);
+        return expHistory.data;
+    } catch{
+        console.log("Error") //TODO
+    }
+}
+
 export {
-    getHistory, postExpression
+    getHistory, getClearHistory, postExpression
 }
