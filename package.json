@@ -1,0 +1,20 @@
+{
+  "name": "sezzle-socket-calc",
+  "version": "1.0.0",
+  "description": "Socket Calculator that stores last 10 calculations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michielu/sezzle-socket-calc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michielu/sezzle-socket-calc/issues"
+  },
+  "homepage": "https://github.com/Michielu/sezzle-socket-calc#readme"
+}
