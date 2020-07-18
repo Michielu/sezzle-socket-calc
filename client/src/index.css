@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.expression-display{
+  min-height: 25px;
+}
+
+.calc-butt{
+  margin:1px;
+}
+
+.calc-body{
+  padding: 10px;
+}
+
+.calc-history{
+  border-top-style: groove;
+  margin-top:10px;
+}
+
+.calc-jumbo{
+  margin-top:10px;  
+  padding: 1rem 1rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}

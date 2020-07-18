@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import socket from '../../utils/socket';
 
-import { Calculator, HistoryBoard } from '../index.js'
-import { addToQueue } from '../../utils/history'
+import { Calculator, HistoryBoard } from '../index.js';
+import { addToQueue } from '../../utils/history';
+import { CalcJumbo } from '../../partials';
 
 
 function SezzleCalc(props) {
@@ -25,6 +26,7 @@ function SezzleCalc(props) {
 
     return (
         <div>
+            <CalcJumbo value="Sezzle Socket Calculator" />
             <Calculator />
             <HistoryBoard expressionHistory={clientHistory} />
         </div>

@@ -9,9 +9,9 @@ function Calculator() {
     const { handleNum, handleOp, handleClear, handleSolve, handleDecimal } = GenerateHandlers(useExpressions)
 
     return (
-        <div >
-            <div>{useExpressions.expression}</div>
-            <div className="mainCalc">
+        <div className="calc-body">
+            <div className="expression-display">{useExpressions.expression}</div>
+            <div>
                 <div className="button-row">
                     <CalcButton varient="outline-primary" onClick={handleOp} value={'/'} />
                     <CalcButton varient="outline-primary" onClick={handleOp} value={'*'} />
