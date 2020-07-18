@@ -1,10 +1,12 @@
 import React from 'react';
 
-function HistoryBoard() {
+function HistoryBoard({ expressionHistory }) {
     return (
         <div>
             <h4>Calculation History</h4>
-            <p>none</p>
+            {expressionHistory.map((expression, i) => {
+                return <div key={"exp" + i}>{expression}</div>
+            })}
         </div>
     )
 }

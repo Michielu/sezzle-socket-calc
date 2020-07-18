@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Calculator, HistoryBoard } from '../index';
 
-function SezzleCalc() {
+
+function SezzleCalc(props) {
+    const [clientHistory, setClientHistory] = useState(props.serverHistory);
+
     return (
         <div>
             <Calculator />
-            <HistoryBoard />
+            <HistoryBoard expressionHistory={clientHistory} />
         </div>
     )
 }
