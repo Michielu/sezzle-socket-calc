@@ -2,6 +2,8 @@
 
 Socket Calculator that stores last 10 calculations
 
+https://sezzle-socket-calc.herokuapp.com/
+
 ### Missing features 
 Due to the time restraint, there are some non-implemented features:
 
